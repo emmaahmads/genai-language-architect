@@ -1,35 +1,56 @@
-# GenAI Bootcamp 2025 by [ExamPro](https://www.exampro.co/) 🔥
-In this course, Andrew Brown and developers are designing and developing AI-powered language learning applications using state-of-the-art GenAI solutions.
-- [Live sessions](https://youtube.com/playlist?list=PLBfufR7vyJJ69c9MNlOKtO2w2KU5VzLJV&si=rYN0KKLd2RWgjZw_)
-- [Bootcamp Wiki](https://docs.google.com/document/d/1KVDTDF4t8VtI69F5KMo67KoTBXgVhsd2O9hK-uPh2rA/edit?tab=t.skocibnip81i)
-### Sponsors
-[Intel](https://genai.cloudprojectbootcamp.com/booth/intel), [FreeCodeCamp](https://genai.cloudprojectbootcamp.com/booth/freecodecamp), [Torc.dev](https://genai.cloudprojectbootcamp.com/booth/torc), [CodeRabbit](https://coderabbit.ai/)
+# GenAI Language Architect: Multi-Agent Learning System
 
-### My target language 👩‍🏫🌏🇲🇾
-- Malay with Jawi scripts 
---- _"Bahasa Melayu dan tulisan Jawi"_ بهاس ملايو دان توليسن جاوي
+A modular, containerized platform designed to demonstrate the orchestration of Generative AI for structured language acquisition.  
+This repository serves as a blueprint for building scalable, LLM-agnostic applications using modern architectural patterns.
 
-## My learning projects / Graded Assignments 📚🎓✅
-1. [GenAI Architecting](https://github.com/emmaahmads/free-genai-bootcamp-2025/tree/main/genai-architecting)
-2. [Lang Portal](https://github.com/emmaahmads/free-genai-bootcamp-2025/tree/main/lang-portal-golang-vuejs)
-3. [Vocab Importer](https://github.com/emmaahmads/free-genai-bootcamp-2025/tree/main/vocab_importer)
-4. [OPEA Megaservice](https://github.com/emmaahmads/free-genai-bootcamp-2025/tree/main/opea-comps-new)
-5. [Writing App](https://github.com/emmaahmads/free-genai-bootcamp-2025/tree/main/writing-practice)
-6. [Listening App](https://github.com/emmaahmads/free-genai-bootcamp-2025/tree/main/listening-comp)
-7. [Sentence Constructor](https://github.com/emmaahmads/free-genai-bootcamp-2025/tree/main/sentence-constructor)
-8. [Agent Content](https://github.com/emmaahmads/free-genai-bootcamp-2025/tree/main/agent-content)
+---
 
-### Repository Structure
-```
-├── README.md                    # Main repo overview
-├── journaling/                  # My notes and Bootcamp journey
-├── genai-architecting/          # AI system architecture
-├── sentence-constructor/        # NLP-based Malay language tutoring
-├── opea-comps-new/              # Open Platform Enterprise AI (OPEA) system (megaservice from scratch)
-├── lang-portal-golang-vuejs/    # My frontend and backend applications
-├── vocab_importer/              # Word generator using customized private LLM
-├── writing-practice/            # OCR assisted grading system for writing words in Jawi script
-├── typing-tutor/                # Andrew Brown's typing tutor app (copied directly)
-├── agent-content/               # Agentic content generation
-├── listening-comp/              # Listening comprehension app
-```
+## 🏗️ System Architecture
+
+The system is built on a **Decoupled Micro-Service Architecture**, ensuring that the user interface, business logic, and LLM orchestration layers remain independent and scalable.
+
+### Architectural Pillars
+
+- **Provider Agnostic**  
+  Built to switch seamlessly between Cloud LLMs (OpenAI, Claude) and Local LLMs (Ollama) using a standardized adapter pattern.
+
+- **Container-First Orchestration**  
+  Every component (Frontend, Backend, Database) is isolated via Docker, ensuring environment parity across development and production.
+
+- **Prompt Engineering as a Service**  
+  Centralized prompt management for specialized tasks like the *Sentence Constructor*, allowing iterative testing without redeploying core logic.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React / Next.js (Client-side state management and interactive UI)  
+- **Backend**: Python Flask / FastAPI (RESTful API design and business logic)  
+- **AI/ML**: OpenAI API, Ollama (Local inference), LangChain (Orchestration)  
+- **Infrastructure**: Docker & Docker Compose (Containerization)
+
+---
+
+## 📂 Project Structure
+
+| Component               | Description                          | Architectural Highlights                          |
+|------------------------|--------------------------------------|--------------------------------------------------|
+| `sentence-constructor/` | AI-powered grammar assistant         | Implements Chain-of-Thought prompting logic      |
+| `language-portal/`      | Central management hub               | Demonstrates Service-Oriented Architecture (SOA) |
+| `infrastructure/`       | Docker and deployment configurations | Ensures Infrastructure as Code (IaC) principles  |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Docker & Docker Compose  
+- Python 3.10+  
+- API Keys for OpenAI *(optional for local-only mode)*  
+
+### Installation
+
+**Clone the repository:**
+```bash
+git clone https://github.com/emmaahmads/genai-language-architect.git
