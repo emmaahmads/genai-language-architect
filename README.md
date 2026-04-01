@@ -59,5 +59,4 @@ git clone https://github.com/emmaahmads/genai-language-architect.git
 ```bash
 docker-compose up -d
 ```
-## 🤝 Contributing
-This project was developed as part of the Free GenAI Bootcamp 2025 to master the intersection of software architecture and Generative AI.
+## This project was developed as part of the Free GenAI Bootcamp 2025 to master the intersection of software architecture and Generative AI.
