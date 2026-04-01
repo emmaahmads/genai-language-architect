@@ -24,9 +24,9 @@ The system is built on a **Decoupled Micro-Service Architecture**, ensuring that
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React / Next.js (Client-side state management and interactive UI)  
-- **Backend**: Python Flask / FastAPI (RESTful API design and business logic)  
-- **AI/ML**: OpenAI API, Ollama (Local inference), LangChain (Orchestration)  
+- **Frontend**: Vue.js (Client-side state management and interactive UI)  
+- **Backend**: Go / FastAPI (RESTful API design and business logic)  
+- **AI/ML**: Intel OPEA, OpenAI API, Ollama (Local inference), LangChain (Orchestration)  
 - **Infrastructure**: Docker & Docker Compose (Containerization)
 
 ---
@@ -41,14 +41,6 @@ The system is built on a **Decoupled Micro-Service Architecture**, ensuring that
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Docker & Docker Compose  
-- Python 3.10+  
-- API Keys for OpenAI 
-
 ### Installation
 
 **Clone the repository:**
@@ -59,4 +51,4 @@ git clone https://github.com/emmaahmads/genai-language-architect.git
 ```bash
 docker-compose up -d
 ```
-## This project was developed as part of the Free GenAI Bootcamp 2025 to master the intersection of software architecture and Generative AI.
+This project was developed as part of the Free GenAI Bootcamp 2025 to master the intersection of software architecture and Generative AI.
