@@ -47,10 +47,17 @@ The system is built on a **Decoupled Micro-Service Architecture**, ensuring that
 
 - Docker & Docker Compose  
 - Python 3.10+  
-- API Keys for OpenAI *(optional for local-only mode)*  
+- API Keys for OpenAI 
 
 ### Installation
 
 **Clone the repository:**
 ```bash
 git clone https://github.com/emmaahmads/genai-language-architect.git
+
+**Launch the environment:**
+```bash
+docker-compose up -d
+
+## 🤝 Contributing
+This project was developed as part of the Free GenAI Bootcamp 2025 to master the intersection of software architecture and Generative AI. Contributions focusing on architectural improvements or new agentic features are welcome.
